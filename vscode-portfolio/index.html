@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code Portfolio - Muhammad Darwish Bin Khairul Asraf</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="vscode-container">
+        <!-- Title Bar -->
+        <div class="title-bar">
+            <div class="window-controls">
+                <div class="window-btn close"></div>
+                <div class="window-btn minimize"></div>
+                <div class="window-btn maximize"></div>
+            </div>
+            <div class="title">Developer Portfolio - Visual Studio Code</div>
+            <div class="title-spacer"></div>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="main-layout">
+            <!-- Activity Bar (Leftmost) -->
+            <div class="activity-bar">
+                <div class="activity-icon active" data-view="explorer">
+                    <i class="fas fa-folder-open"></i>
+                </div>
+                <div class="activity-icon" data-view="search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="activity-icon" data-view="git">
+                    <i class="fab fa-git-alt"></i>
+                </div>
+                <div class="activity-icon" data-view="settings">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="activity-icon-bottom">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+            </div>
+
+            <!-- Sidebar (File Explorer) -->
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-header">
+                    <span>EXPLORER</span>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="sidebar-content">
+                    <div class="folder-item open">
+                        <i class="fas fa-folder-open"></i>
+                        <span>PORTFOLIO</span>
+                    </div>
+                    <div class="file-item active-file" data-tab="home">
+                        <i class="fab fa-html5"></i>
+                        <span>home.html</span>
+                    </div>
+                    <div class="file-item" data-tab="about">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>about.css</span>
+                    </div>
+                    <div class="file-item" data-tab="projects">
+                        <i class="fab fa-js"></i>
+                        <span>projects.js</span>
+                    </div>
+                    <div class="file-item" data-tab="contact">
+                        <i class="fas fa-file-alt"></i>
+                        <span>contact.json</span>
+                    </div>
+                    <div class="folder-item">
+                        <i class="fas fa-folder"></i>
+                        <span>assets</span>
+                    </div>
+                    <div class="folder-item">
+                        <i class="fas fa-folder"></i>
+                        <span>components</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Editor Area -->
+            <div class="editor-area">
+                <!-- Tabs Header -->
+                <div class="tabs-header">
+                    <div class="tab active" data-tab="home">
+                        <i class="fab fa-html5"></i>
+                        <span>home.html</span>
+                        <i class="fas fa-times close-tab"></i>
+                    </div>
+                    <div class="tab" data-tab="about">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>about.css</span>
+                        <i class="fas fa-times close-tab"></i>
+                    </div>
+                    <div class="tab" data-tab="projects">
+                        <i class="fab fa-js"></i>
+                        <span>projects.js</span>
+                        <i class="fas fa-times close-tab"></i>
+                    </div>
+                    <div class="tab" data-tab="contact">
+                        <i class="fas fa-file-alt"></i>
+                        <span>contact.json</span>
+                        <i class="fas fa-times close-tab"></i>
+                    </div>
+                </div>
+
+                <!-- Editor Content -->
+                <div class="editor-content">
+                    <!-- Home Tab Content -->
+                    <div class="editor-pane active" id="home-content">
+                        <div class="line-numbers">
+                            1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"hero"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h1&gt;</span>👋 Hello, I'm <span class="variable">Muhammad Darwish Bin Khairul Asraf</span><span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;p&gt;</span><span class="variable">Full Stack Developer</span> specializing in modern web technologies<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"tech-stack"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;span&gt;</span>React<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;span&gt;</span>Node.js<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;span&gt;</span>Python<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;span&gt;</span>Java<span class="tag">&lt;/span&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code></pre>
+                        </div>
+                    </div>
+
+                    <!-- About Tab Content -->
+                    <div class="editor-pane" id="about-content">
+                        <div class="line-numbers">
+                            1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="comment">/* About Section Styles */</span>
+.<span class="class-name">developer-card</span> {
+    <span class="property">background</span>: <span class="value">#252526</span>;
+    <span class="property">border-radius</span>: <span class="value">8px</span>;
+    <span class="property">padding</span>: <span class="value">2rem</span>;
+    <span class="property">margin</span>: <span class="value">2rem 0</span>;
+}
+
+.<span class="class-name">experience-badge</span> {
+    <span class="property">display</span>: <span class="value">inline-block</span>;
+    <span class="property">background</span>: <span class="value">#0e639c</span>;
+    <span class="property">padding</span>: <span class="value">4px 12px</span>;
+    <span class="property">border-radius</span>: <span class="value">20px</span>;
+    <span class="property">font-size</span>: <span class="value">12px</span>;
+}
+
+<span class="comment">// Years of experience: 2+</span>
+</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Projects Tab Content -->
+                    <div class="editor-pane" id="projects-content">
+                        <div class="line-numbers">
+                            1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="keyword">const</span> projects = [
+    {
+        <span class="property">name</span>: <span class="string">"E-Commerce Platform"</span>,
+        <span class="property">tech</span>: [<span class="string">"React"</span>, <span class="string">"Node.js"</span>, <span class="string">"MongoDB"</span>],
+        <span class="property">description</span>: <span class="string">"Full-stack shopping cart with payment integration"</span>,
+        <span class="property">github</span>: <span class="string">"https://github.com/..."</span>
+    },
+    {
+        <span class="property">name</span>: <span class="string">"AI Image Generator"</span>,
+        <span class="property">tech</span>: [<span class="string">"Python"</span>, <span class="string">"TensorFlow"</span>, <span class="string">"Flask"</span>],
+        <span class="property">description</span>: <span class="string">"Generate images from text descriptions"</span>,
+        <span class="property">github</span>: <span class="string">"https://github.com/..."</span>
+    }
+];
+
+</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Contact Tab Content -->
+                    <div class="editor-pane" id="contact-content">
+                        <div class="line-numbers">
+                            1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12
+                        </div>
+                        <div class="code-content">
+                            <pre><code>{
+    <span class="property">"name"</span>: <span class="string">"Muhammad Darwish Bin Khairul Asraf"</span>,
+    <span class="property">"email"</span>: <span class="string">"darwish.email@example.com"</span>,
+    <span class="property">"github"</span>: <span class="string">"https://github.com/darwishexample"</span>,
+    <span class="property">"linkedin"</span>: <span class="string">"https://linkedin.com/in/darwishexample"</span>,
+    <span class="property">"availability"</span>: <span class="string">"Open for freelance & full-time"</span>,
+    <span class="property">"social"</span>: {
+        <span class="property">"twitter"</span>: <span class="string">"@yourhandle"</span>,
+        <span class="property">"devto"</span>: <span class="string">"@darwishexample"</span>
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel (Terminal) -->
+            <div class="panel" id="terminal">
+                <div class="panel-header">
+                    <div class="panel-tabs">
+                        <span class="panel-tab active">TERMINAL</span>
+                        <span class="panel-tab">PROBLEMS</span>
+                        <span class="panel-tab">OUTPUT</span>
+                        <span class="panel-tab">DEBUG CONSOLE</span>
+                    </div>
+                    <div class="panel-controls">
+                        <i class="fas fa-times" id="close-terminal"></i>
+                    </div>
+                </div>
+                <div class="panel-content">
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">node --version</span>
+                    </div>
+                    <div class="terminal-output">v18.17.0</div>
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">npm run dev</span>
+                    </div>
+                    <div class="terminal-output">✓ Portfolio running at http://localhost:3000</div>
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command typing" id="typing-command"></span>
+                        <span class="cursor"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="status-left">
+                <span><i class="fab fa-git-alt"></i> main</span>
+                <span><i class="fas fa-code"></i> TypeScript React</span>
+                <span>Ln 1, Col 1</span>
+                <span>Spaces: 2</span>
+                <span>UTF-8</span>
+            </div>
+            <div class="status-right">
+                <span><i class="fas fa-check-circle"></i> Prettier</span>
+                <span><i class="fas fa-moon"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
